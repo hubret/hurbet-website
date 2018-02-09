@@ -1,0 +1,15 @@
+name: Athenaeum
+
+image: common>index
+
+image name: #[Athenaeum]
+
+tags: 
+
+title: The #[Athenaeum] is where collected information is kept.
+
+content:
+The #[Athenaeum] is both a library and a bridge between the digital and physical memories that I use. I established the Athenaeum in order to extend my own capabilities of remembering.
++
++
+To find your way between the shelves and rooms, the #[Index] can point you in the direction of the information you seek.

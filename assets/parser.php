@@ -8,7 +8,7 @@ new parsing criteria and features can seamlessly be introduced as a basic additi
 */
 class Parser {
 	//image directory
-	private $imageDirectory = 'images';
+	private $mediaDirectory = 'media';
 
 	//goes through all artifact attributes that are independant from other artifacts and formats each one according to existing formatting rules
 	public function firstFormat($artifact) {
@@ -27,6 +27,9 @@ class Parser {
 			$this->formatText($artifact, 'image name', '#', 'class="header-title neutral-link"');
 			$this->formatText($artifact, 'image name', '@', 'class="header-title neutral-link"');
 		}
+            
+                //create sketch
+                if($artifact->attributes['sketch']) $artifact->attributes['sketch'] = $this->createSketch($artifact->attributes['sketch']);
 
 		//format title
 		if ($artifact->attributes['title']) {
@@ -79,8 +82,8 @@ class Parser {
 		if (sizeof($this->allStringPositions($artifact->attributes[$attribute], '[')) != sizeof($this->allStringPositions($artifact->attributes[$attribute], ']'))) {
 			$artifact->attributes['image'] = null;
 			$artifact->attributes['image name'] = null;
+			$artifact->attributes['sketch'] = null;
 			$artifact->attributes['content'] = null;
-			$artifact->borkenPath = null;
 			$artifact->path = null;
 			$artifact->tags = null;
 			$artifact->attributes['title'] = 'There was an error loading this page.';
@@ -266,7 +269,7 @@ class Parser {
 		$strings = array();
 		$strings = explode('>', trim($string));
 
-		$image = $this->imageDirectory;
+		$image = $this->mediaDirectory;
 
 		for ($i = 0; $i < sizeof($strings); $i++) {
 			$image = $image.'/'.$strings[$i];
@@ -283,6 +286,25 @@ class Parser {
 			return $img;
 		} else return $image;
 	}
+    
+        //takes $string and makes it into a sketch
+        private function createSketch($string) {
+
+            $strings = array();
+            $strings = explode('>', trim($string));
+
+            $sketch = $this->mediaDirectory;
+
+            for ($i = 0; $i < sizeof($strings); $i++) {
+                $sketch = $sketch.'/'.$strings[$i];
+            }
+
+            $sketch = $sketch.'.js';
+
+            $sketch = str_replace(' ', '%20', $sketch);
+
+            return $sketch;
+        }
 
 	//takes $string and makes it into subtitle with custom $style (note: breaks flow of page, redeclaring '<p>' to keep flow)
 	private function createSubtitle($string, $style) {

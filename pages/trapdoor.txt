@@ -1,0 +1,13 @@
+name: Trapdoor
+
+image: common>trapdoor
+
+image name: #[Trapdoor]
+
+tags: 
+
+title: The #[Trapdoor] lies at the back of the Athenaeum.
+
+content: Go through the #[Trapdoor], they won't find you there.
+
+-[trapdoor]

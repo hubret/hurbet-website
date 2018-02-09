@@ -1,0 +1,31 @@
+name: Foody
+
+image: projects>foody>splash
+
+image name: #[Foody]
+
+tags: school, interaction, conceptual, featured
+
+title: #[Foody] is a concept web/app based system for managing recipes.
+
+content: *[2016]
++
++
+This project was finished over the course of a semester, through multiple stages.
++
++
+For the first stage, I did quick interviews of my peers. Organizing the qualitative data informed the creation of personas.
++
+&[projects>foody>1]
++
+The second stage asked for a complete list of design requirements, including _[data requirements], _[functional requirements], and _[contextual requirements], based on the needs of potential users, informed by the data collection.
++
+&[projects>foody>2]
++
+The third stage involved making greybox and visually treated mockups of a mobile interface, informed by the design requirements, and showing the interactions in a specific scenario of the system's use.
++
+&[projects>foody>3a]
++
+&[projects>foody>3b]
++
+@[View the full project documentation>https://www.behance.net/gallery/35483557/Foody-Interface-Development]

@@ -1,0 +1,14 @@
+name: Insipid
+
+image: insipid>splash
+
+image name: #[Insipid]
+
+tags: interaction
+
+title: #[Insipid] is a simple calendar webapp that reads plaintext.
+
+content: Inspired by Visor, a simple presentation webapp built by @[vi>v-os.ca]
++
++
+_[stub]

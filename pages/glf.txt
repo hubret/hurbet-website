@@ -1,0 +1,23 @@
+name: GLF
+
+image: projects>GLF>splash
+
+image name: #[GLF]
+
+tags: school, visual, interaction
+
+title: #[GLF] is a fictional Canadian learning foundation and charity.
+
+content: *[2015]
++
++
+This is a piece that was submitted as a school assignment.
++
++
+The project requirements had students choose from a list of Canadian charities, and redesign their websites by taking their content and information and reflowing it into a website with a new style.
++
++
+Like #[Metrotub], which I had done in the same class, this was an exercise of storytelling using images (from a Creative Commons image database), and an exercise in using design frameworks such as Foundation.
++
++
+&[projects>metrotub>1]

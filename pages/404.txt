@@ -1,17 +1,14 @@
 name: 404
 
-image: example>404
+image: common>404
 
 image name: #[404]
 
 tags: page, 404
 
-title: The #[404] page is shown whenever an _[artifact] can't be found.
+title: HTTP #[404]
 
-content: This is the #[404] page. Seems like you tried to search for _[$[self]] and couldn't find it.
+content: You're looking for _[$[self]], but _[$[self]] can't be found.
 +
 +
-Only two other pages exist in this instance of _[Purity].
-
-![Other pages:]
--[content]
+Upon coming across this circumstance, it is generally suggested that you @[turn back>javascript:history.go(-1)] or @[depart from the scene>/].

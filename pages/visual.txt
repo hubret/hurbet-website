@@ -1,0 +1,13 @@
+name: Visual
+
+sketch: common>portal
+
+image name: #[Visual]
+
+tags: portal, portal-nature
+
+title: Portal: #[Visual] is a list of visual-focused work.
+
+content: These are my projects that intersect with the disciplines of graphic design, photography, and other visual forms of communication.
+
+-[visual]

@@ -12,6 +12,7 @@ class Artifact {
 		'name'=>'',
 		'image'=>'',
 		'image name'=>'',
+                'sketch'=>'',
 		'title'=>'',
 		'content'=>'',
 	);
@@ -21,9 +22,6 @@ class Artifact {
 
 	//path carries the directory path of the file
 	public $path = array();
-
-	//pure path array, no styling
-	public $brokenPath = array();
 
 	//constructor parses file to retrieve its contents
 	public function __construct($filePath, $brokenPath) {
@@ -124,9 +122,7 @@ function createArtifacts() {
 				//if found pages directory, push to artifacts array
 				if ($path[$j] === $pageDirectoryName . DIRECTORY_SEPARATOR) {
 					$brokenPath = explode(DIRECTORY_SEPARATOR, $file);
-					$newArtifact = new Artifact($pageDirectoryPrePath . $file, $brokenPath);
-					array_push($artifacts, $newArtifact);
-					$newArtifact->brokenPath = $brokenPath;
+					array_push($artifacts, new Artifact($pageDirectoryPrePath . $file, $brokenPath));
 					break;
 				}
 			}
@@ -189,34 +185,5 @@ function getDirContents($dir, &$results = array()){
 	}
 
 	return $results;
-}
-
-//get pages in same directory
-function getRelated($artifact, $getName, $nameStyle, $titleStyle, $sameStyle) {
-	global $artifacts;
-
-	if (sizeof($artifact->brokenPath) == 2) {
-		return null;
-	}
-
-	$dir = $artifact->brokenPath[sizeof($artifact->brokenPath) - 2];
-	$contents = '';
-
-	for ($i = 0; $i < sizeof($artifacts); $i++) {
-		if ($artifacts[$i]->hasTag('error')) continue;
-
-		if ($artifacts[$i]->brokenPath[sizeof($artifacts[$i]->brokenPath) - 2] == $dir) {
-			if ($artifacts[$i] == $artifact) {
-				if ($getName) $contents += '<span class="'. $nameStyle .' '. $sameStyle .'">'. $artifacts[$i]->attributes['name'] .'</span>';
-				$contents = $contents . '<span class="'. $titleStyle .' '. $sameStyle .'">'. $artifacts[$i]->attributes['title'] .'</span>';
-			} else {
-				if ($getName) $contents += '<span class="'. $nameStyle .'">'. $artifacts[$i]->attributes['name'] .'</span>';
-				$contents = $contents . '<span class="'. $titleStyle .'">'. $artifacts[$i]->attributes['title'] .'</span>';
-			}	
-		}
-	}
-
-	//return $contents;
-	return $contents;
 }
 ?>

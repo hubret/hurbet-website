@@ -1,19 +1,18 @@
 name: Index
 
-image: example>one
+sketch: rain
 
-image name: #[Index]
+tags: portal
 
-tags: page, content
+title: The #[Index] points to the information you seek.
 
-title: The #[Index] page is the default landing page.
-
-content: This is an example setup for an instance of _[Purity].
+content:
+![I'm #[hubret], and I am a multidisciplinary designer.]
+I'm from Toronto and I currently study at Sheridan College.
 +
-+
-All parsing is done through _[Purity], and the layout and styling is done in HTML/PHP and CSS. Feel free to use any part of this setup.
-+
-+
-There are a total of 3 pages here.
-
--[page]
+Welcome to the #[Athenaeum], a collection of my work, doodles, and thoughts.
+%[]
+![Select work]
+-[featured]
+%[]
+-[portal-nature]

@@ -1,0 +1,25 @@
+name: Chune
+
+image: projects>chune>splash
+
+image name: #[Chune]
+
+tags: school, interaction, physical, visual, featured
+
+title: #[Chune] is a conceptual physical music system.
+
+content: *[2017]
++
++
+This school project was a collaboration with Chantal Lam and Emma Wooton.
++
++
+Chune is a system that would play music when a physical _[music card] is placed on the _[Chune Platform]. This system would let users create communal playlists at social events, as well as let users regain a physical ownership over their music.
++
++
+I worked on visual treatment of the digital interface, and I also wrote the code that translated RFID strings into song URIs.
++
+&[projects>chune>chune]
+Chantal fabricated the physical parts and worked on the visual treatment of the parts, and Emma wrote the code for the microprocessor that scanned and interacted with RFID tags.
++
+&[projects>chune>2]

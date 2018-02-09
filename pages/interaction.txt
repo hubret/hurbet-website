@@ -1,0 +1,13 @@
+name: Interaction
+
+sketch: common>portal
+
+image name: #[Interaction]
+
+tags: portal, portal-nature
+
+title: Portal: #[Interaction] is a list of interactive work.
+
+content: These are my projects that intersect with the disciplines of web design, user experience design, and other interactive means of communication.
+
+-[interaction]

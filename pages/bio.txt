@@ -1,0 +1,46 @@
+name: hubret
+
+image: me
+
+image name: #[hubret]
+
+tags: portal
+
+title: #[hubret] is a multidisciplinary designer from Toronto.
+
+content:
+![Hi, my name is *[Hubert Si].]
+I go by _[hubret] within digital realities.
++
++
+I study Interaction Design at Sheridan College. This academic year marks my 4th year of study.
++
++
+I want to shape how technology will fit into humanity's best interests in the future and nurture a culture that uses technology intentionally.
+
+-[
+twitter: @[@hubret>http://twitter.com/hubret]
+++
+instagram: @[hubret>http://instagram.com/hubret]
+++
+github: @[hubret>https://github.com/hubret]
+++
+youtube: @[Hubert Si>http://youtube.com/channel/UCpx3mH9NpIFqK2W4asCTbpg]
+++
+soundcloud: @[hubret>http://soundcloud.com/hubret]
+++
+email: hubhcsi@gmail.com
+]
+
+%[]
+
+![What I do]
+I graduated high school knowing HTML and a bit of CSS, and I had an abstract intuition about what looked good and what didn't when it came to making art.
++
++
+My journey since then have caused me to try many things, seek to gain mastery, and even to step out of my comfort zone.
++
++s
+I have tried and enjoy a lot of previously foreign things:
+=[visual design ++ pure CSS responsive ++ programming ++ teaching ++ photography ++ playing guitar ++ linux ++ slo-pitch softball ++ mathematics ++ vector graphics ++ microanimations ++ music production ++ music theory ++ physical computing ++ electronics ++ typography ++ fontface creation ++ github ++ 3d modelling ++ rendering]
+I am not satisfied with how we use technology today and now my personal goal is to make an impact.

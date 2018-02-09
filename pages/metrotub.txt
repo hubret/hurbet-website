@@ -1,0 +1,25 @@
+name: Metrotub
+
+image: projects>metrotub>splash
+
+image name: #[Metrotub]
+
+tags: school, visual, interaction, featured
+
+title: #[Metrotub] is a fictional public transportation service.
+
+content: *[2015]
++
++
+This project is comprised of 2 pieces submitted as school assignments.
++
++
+The goal was to pick one of 3 contexts between a restaurant, medical service, or transportation service, and then create a website from scratch for their chosen context.
++
++
+The first piece included a greybox mockup and a pixel perfect mockup of all views of the website, and the second piece included a greybox prototype and a finished, functional website.
++
++
+For me, this was an exercise in storytelling using images (from a Creative Commons image database, which were both used edited and unedited), and an exercise in visual styling and laying out sections of information based on prior planning.
++
+&[projects>metrotub>mock]
